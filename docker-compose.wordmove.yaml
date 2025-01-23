@@ -1,3 +1,4 @@
+#ddev-generated
 services:
   wordmove:
     container_name: ddev-${DDEV_SITENAME}-wordmove
