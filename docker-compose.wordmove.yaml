@@ -5,7 +5,7 @@ services:
       context: ./wordmove-build
       args:
         DDEV_PHP_VERSION: ${DDEV_PHP_VERSION}
-        username: ${USERNAME}
+        username: ${USER}
         uid: ${DDEV_UID}
         gid: ${DDEV_GID}
     labels:
