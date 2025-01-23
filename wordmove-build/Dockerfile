@@ -1,3 +1,4 @@
+#ddev-generated
 ARG DDEV_PHP_VERSION
 FROM nilsglow/wordmove:php${DDEV_PHP_VERSION}
 
