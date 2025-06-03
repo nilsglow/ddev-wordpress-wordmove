@@ -29,6 +29,7 @@ services:
       - .:/mnt/ddev_config:ro
       - ddev-global-cache:/mnt/ddev-global-cache
       - ddev-ssh-agent_socket_dir:/home/.ssh-agent
+      - ${SSH_AUTH_SOCK}:/host-ssh-agent
     hostname: ${DDEV_SITENAME}-wordmove
     environment:
       # copied from ddev web
@@ -80,6 +81,9 @@ services:
       # - PGPASSWORD=db
       # - PGUSER=db
       # - PHP_IDE_CONFIG=serverName=${DDEV_SITENAME}.${DDEV_TLD}
+      # this uses ddev ssh agent
       - SSH_AUTH_SOCK=/home/.ssh-agent/socket
+      # this is our passed in agent socket - override if wanted
+      # - SSH_AUTH_SOCK=/host-ssh-agent
       - TZ=
       - VIRTUAL_HOST=${DDEV_HOSTNAME}
