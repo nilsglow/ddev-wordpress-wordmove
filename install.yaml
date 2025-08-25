@@ -61,6 +61,7 @@ pre_install_actions:
 project_files:
   - docker-compose.wordmove.yaml
   - wordmove-build/Dockerfile
+  - commands/wordmove/wordmove
   # - commands/web/add-on-command
   # - commands/host/add-on-command-host
   # - web-build/Dockerfile.addon-template

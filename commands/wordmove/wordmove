@@ -1,0 +1,9 @@
+#!/bin/bash
+## Description: Run wordmove inside its container
+## Usage: wordmove [flags] [args]
+## Example: "ddev wordmove pull -e stage1 --all"
+## ProjectTypes: wordpress
+## ExecRaw: true
+
+wordmove "$@"
+
